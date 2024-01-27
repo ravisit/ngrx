@@ -1,0 +1,16 @@
+<div class="container text-center">
+  <div class="row">
+    <div class="col-md-12">
+      <app-counter-output [counter]="counter" />
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-md-12">
+      <app-counter-btns
+        (increase)="onIncrement()"
+        (decrease)="onDecrement()"
+        (rset)="onReset()"
+      />
+    </div>
+  </div>
+</div>
